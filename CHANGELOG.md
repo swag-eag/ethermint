@@ -40,12 +40,12 @@ Ref: https://keepachangelog.com/en/1.0.0/
 ### Features
 
 * (rpc) [#1682](https://github.com/evmos/ethermint/pull/1682) Add config for maximum number of bytes returned from eth_call.
-* (ante) [#310](https://github.com/crypto-org-chain/ethermint/pull/310) Support blocking list of addresses in mempool.
-* (evm) [#328](https://github.com/crypto-org-chain/ethermint/pull/328) Support precompile interface.
-* (statedb) [#333](https://github.com/crypto-org-chain/ethermint/pull/333) Support native action in statedb, prepare for precompiles.
-* (rpc) [#369](https://github.com/crypto-org-chain/ethermint/pull/369) Support state overrides in eth_call.
-* (precompile) [#371](https://github.com/crypto-org-chain/ethermint/pull/371) Add StateDB itself into native context for precompiles to emit evm logs directly.
-* (rpc) [#392](https://github.com/crypto-org-chain/ethermint/pull/392) Support block overrides in debug_traceCall.
+* (ante) [#310](https://github.com/swag-eag/ethermint/pull/310) Support blocking list of addresses in mempool.
+* (evm) [#328](https://github.com/swag-eag/ethermint/pull/328) Support precompile interface.
+* (statedb) [#333](https://github.com/swag-eag/ethermint/pull/333) Support native action in statedb, prepare for precompiles.
+* (rpc) [#369](https://github.com/swag-eag/ethermint/pull/369) Support state overrides in eth_call.
+* (precompile) [#371](https://github.com/swag-eag/ethermint/pull/371) Add StateDB itself into native context for precompiles to emit evm logs directly.
+* (rpc) [#392](https://github.com/swag-eag/ethermint/pull/392) Support block overrides in debug_traceCall.
 
 ### State Machine Breaking
 
@@ -55,8 +55,8 @@ Ref: https://keepachangelog.com/en/1.0.0/
 - (eip712) [#1746](https://github.com/evmos/ethermint/pull/1746) Add EIP712 support for multiple messages and schemas
 - (feemarket) [#1790](https://github.com/evmos/ethermint/pull/1790) Raise error when get invalid consensus params
 - (deps) [#1782](https://github.com/evmos/ethermint/pull/1782) Bump Cosmos-SDK to v0.47.3 and ibc-go to v7.1.0.
-- (ante) [#358](https://github.com/crypto-org-chain/ethermint/pull/358) enforce user setting the From address in MsgEthereumTx
-- (geth) [#377](https://github.com/crypto-org-chain/ethermint/pull/377) Update go-ethereum version to [`v1.11.2`](https://github.com/ethereum/go-ethereum/releases/tag/v1.11.2).
+- (ante) [#358](https://github.com/swag-eag/ethermint/pull/358) enforce user setting the From address in MsgEthereumTx
+- (geth) [#377](https://github.com/swag-eag/ethermint/pull/377) Update go-ethereum version to [`v1.11.2`](https://github.com/ethereum/go-ethereum/releases/tag/v1.11.2).
 
 ### Bug Fixes
 
@@ -65,36 +65,36 @@ Ref: https://keepachangelog.com/en/1.0.0/
 - (rpc) [#1720](https://github.com/evmos/ethermint/pull/1720) Fix next block fee for historical block and calculate base fee by params.
 - (rpc) [#1685](https://github.com/evmos/ethermint/pull/1685) Fix parse for websocket connID.
 - (rpc) [#1773](https://github.com/evmos/ethermint/pull/1773) Avoid channel get changed when concurrent subscribe happens.
-* (mempool) [#310](https://github.com/crypto-org-chain/ethermint/pull/310) disable vesting messages in check tx mode.
-* (rpc) [#364](https://github.com/crypto-org-chain/ethermint/pull/364) Only use NextBaseFee as last item to avoid concurrent write in `eth_feeHistory`.
-* (config) [#365](https://github.com/crypto-org-chain/ethermint/pull/365) Avoid redundant parse chainID from gensis when start server.
-* (rpc) [#382](https://github.com/crypto-org-chain/ethermint/pull/382) Align tracer config with go-ethereum.
-* (rpc) [#386](https://github.com/crypto-org-chain/ethermint/pull/386) Cleanup unused cancel function in filter.
-* (rpc) [#388](https://github.com/crypto-org-chain/ethermint/pull/388) Avoid out of bound panic when error message.
-* (rpc) [#391](https://github.com/crypto-org-chain/ethermint/pull/391) Align block param with go-ethereum in debug_traceCall.
-- (evm) [#396](https://github.com/crypto-org-chain/ethermint/pull/396) Align evm tx type with go-ethereum.
-* (rpc) [#398](https://github.com/crypto-org-chain/ethermint/pull/398) Avoid infinite failed to fetch block error when lastBlock is smaller than earliest on prune node.
-- (rpc) [#401](https://github.com/crypto-org-chain/ethermint/pull/401) Align max nextBaseFee with minGasPrice in eth_feeHistory.
-- (ante) [#404](https://github.com/crypto-org-chain/ethermint/pull/404) Correct priority under recheck mode.
-- (evm) [#405](https://github.com/crypto-org-chain/ethermint/pull/405) Avoid duplicate cache events emitted from evm hooks.
-- (rpc) [#406](https://github.com/crypto-org-chain/ethermint/pull/406) Align filter rule for eth_getLogs when toBlock is newer than latest or extract error occurs.
-- (rpc) [#409](https://github.com/crypto-org-chain/ethermint/pull/409) Fix nextBaseFee in eth_feeHistory before fee market param change.
+* (mempool) [#310](https://github.com/swag-eag/ethermint/pull/310) disable vesting messages in check tx mode.
+* (rpc) [#364](https://github.com/swag-eag/ethermint/pull/364) Only use NextBaseFee as last item to avoid concurrent write in `eth_feeHistory`.
+* (config) [#365](https://github.com/swag-eag/ethermint/pull/365) Avoid redundant parse chainID from gensis when start server.
+* (rpc) [#382](https://github.com/swag-eag/ethermint/pull/382) Align tracer config with go-ethereum.
+* (rpc) [#386](https://github.com/swag-eag/ethermint/pull/386) Cleanup unused cancel function in filter.
+* (rpc) [#388](https://github.com/swag-eag/ethermint/pull/388) Avoid out of bound panic when error message.
+* (rpc) [#391](https://github.com/swag-eag/ethermint/pull/391) Align block param with go-ethereum in debug_traceCall.
+- (evm) [#396](https://github.com/swag-eag/ethermint/pull/396) Align evm tx type with go-ethereum.
+* (rpc) [#398](https://github.com/swag-eag/ethermint/pull/398) Avoid infinite failed to fetch block error when lastBlock is smaller than earliest on prune node.
+- (rpc) [#401](https://github.com/swag-eag/ethermint/pull/401) Align max nextBaseFee with minGasPrice in eth_feeHistory.
+- (ante) [#404](https://github.com/swag-eag/ethermint/pull/404) Correct priority under recheck mode.
+- (evm) [#405](https://github.com/swag-eag/ethermint/pull/405) Avoid duplicate cache events emitted from evm hooks.
+- (rpc) [#406](https://github.com/swag-eag/ethermint/pull/406) Align filter rule for eth_getLogs when toBlock is newer than latest or extract error occurs.
+- (rpc) [#409](https://github.com/swag-eag/ethermint/pull/409) Fix nextBaseFee in eth_feeHistory before fee market param change.
 
 ### Improvements
 
 - (ante) [#1717](https://github.com/evmos/ethermint/pull/1717) Reuse sender recovery result.
-- (cli) [#242](https://github.com/crypto-org-chain/ethermint/pull/242) Integrate tendermint bootstrap cmd.
-- (cli) [#246](https://github.com/crypto-org-chain/ethermint/pull/246) Call app.Close to cleanup resource on graceful shutdown.
-* (cli) [#288](https://github.com/crypto-org-chain/ethermint/pull/288) make abci handshake shutdown gracefully.
-- (evm) [#343](https://github.com/crypto-org-chain/ethermint/pull/343) Add native event converter APIs.
-- (ante) [#353](https://github.com/crypto-org-chain/ethermint/pull/353) Remove blocked address decorator and support custom decorators instead.
-- (statedb) [#359](https://github.com/crypto-org-chain/ethermint/pull/359) Add `CacheContext` method to StateDB, to support efficient read-only native actions.
-- (rpc) [#375](https://github.com/crypto-org-chain/ethermint/pull/375) Refactor websocket/subscription system to improve performance and stability.
-- (deps) [#381](https://github.com/crypto-org-chain/ethermint/pull/381) Upgrade Go-Ethereum version to [`v1.11.6`](https://github.com/ethereum/go-ethereum/releases/tag/v1.11.6).
-- (precompile) [#380](https://github.com/crypto-org-chain/ethermint/pull/380) Allow init precompiled contract with rules when new evm.
-- (precompile) [#383](https://github.com/crypto-org-chain/ethermint/pull/383) Allow init precompiled contract with ctx.
-- (evm) [#393](https://github.com/crypto-org-chain/ethermint/pull/393) Cleanup ApplyMessageWithConfig interface.
-- (cmd) [#399](https://github.com/crypto-org-chain/ethermint/pull/399) Add pruning and snapshot cmd.
+- (cli) [#242](https://github.com/swag-eag/ethermint/pull/242) Integrate tendermint bootstrap cmd.
+- (cli) [#246](https://github.com/swag-eag/ethermint/pull/246) Call app.Close to cleanup resource on graceful shutdown.
+* (cli) [#288](https://github.com/swag-eag/ethermint/pull/288) make abci handshake shutdown gracefully.
+- (evm) [#343](https://github.com/swag-eag/ethermint/pull/343) Add native event converter APIs.
+- (ante) [#353](https://github.com/swag-eag/ethermint/pull/353) Remove blocked address decorator and support custom decorators instead.
+- (statedb) [#359](https://github.com/swag-eag/ethermint/pull/359) Add `CacheContext` method to StateDB, to support efficient read-only native actions.
+- (rpc) [#375](https://github.com/swag-eag/ethermint/pull/375) Refactor websocket/subscription system to improve performance and stability.
+- (deps) [#381](https://github.com/swag-eag/ethermint/pull/381) Upgrade Go-Ethereum version to [`v1.11.6`](https://github.com/ethereum/go-ethereum/releases/tag/v1.11.6).
+- (precompile) [#380](https://github.com/swag-eag/ethermint/pull/380) Allow init precompiled contract with rules when new evm.
+- (precompile) [#383](https://github.com/swag-eag/ethermint/pull/383) Allow init precompiled contract with ctx.
+- (evm) [#393](https://github.com/swag-eag/ethermint/pull/393) Cleanup ApplyMessageWithConfig interface.
+- (cmd) [#399](https://github.com/swag-eag/ethermint/pull/399) Add pruning and snapshot cmd.
 
 ## [v0.21.0] - 2023-01-26
 

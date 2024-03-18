@@ -126,7 +126,7 @@ schema = 3
   [mod."github.com/cometbft/cometbft-db"]
     version = "v0.0.0-20231011055109-57922ac52a63"
     hash = "sha256-iLs/FN1be3AcoyhKj2+b5Msqeat9j2ja4acyOs+w+Uk="
-    replaced = "github.com/crypto-org-chain/cometbft-db"
+    replaced = "github.com/swag-eag/cometbft-db"
   [mod."github.com/confio/ics23/go"]
     version = "v0.9.0"
     hash = "sha256-guD8w7YygfUp7lpTAUyXQuCPx8F3lXkcg+yR5+JOCbk="
@@ -139,7 +139,7 @@ schema = 3
   [mod."github.com/cosmos/cosmos-sdk"]
     version = "v0.46.0-beta2.0.20231013072415-eec017435467"
     hash = "sha256-TA3D7opzAx0jjhoj54yQbvXc0z+4V93kgpsnCryEuFA="
-    replaced = "github.com/crypto-org-chain/cosmos-sdk"
+    replaced = "github.com/swag-eag/cosmos-sdk"
   [mod."github.com/cosmos/go-bip39"]
     version = "v1.0.0"
     hash = "sha256-Qm2aC2vaS8tjtMUbHmlBSagOSqbduEEDwc51qvQaBmA="
@@ -209,7 +209,7 @@ schema = 3
   [mod."github.com/ethereum/go-ethereum"]
     version = "v1.10.20-0.20231207063621-43cf32d91c3e"
     hash = "sha256-lDIqRLUrXYCb9mmFBY/+WW+ee69+IkxOgqjHVyo4ij0="
-    replaced = "github.com/crypto-org-chain/go-ethereum"
+    replaced = "github.com/swag-eag/go-ethereum"
   [mod."github.com/felixge/httpsnoop"]
     version = "v1.0.2"
     hash = "sha256-hj6FZQ1fDAV+1wGIViAt8XaAkWZ1I5vJzgjIJa7XRBA="
